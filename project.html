@@ -139,7 +139,7 @@ body.modal-open {
 
     <div class="ftco-blocks-cover-1">
         <div class="ftco-cover-1" style="background-image: url('images/hero_1.jpg');">
-            <di  v class="container">
+            <div class="container">
               <div class="row align-items-center justify-content-center">
                 <div class="col-lg-12 text-center">
                    <div class="box-92819">
@@ -157,7 +157,7 @@ body.modal-open {
 	  <div class="modal-content" style="width:800px">
 		<span class="close"></span>
 		<div class="modal-body">
-		 <img src="images/img_1.gif" alt="Image" class="img-fluid">
+		 <img alt="Image" class="img-fluid" id="modelImage">
 		</div> 
 	  </div>
 	</div>
@@ -168,63 +168,32 @@ body.modal-open {
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <div class="media-02819" id="pop_id">
+            <div class="media-02819 pop_id">
               <img src="images/img_1.gif" alt="Image" class="img-fluid">
-              <h3>Downside Up House</h3>
-              <span>Melbourne, Australia</span>
+              <h3>MINIMAL OFFICE</h3>
+              <span>Cherlapally, Hyderabad</span>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="media-02819">
-              <a href="#" class="img-link"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
+            <div class="media-02819 pop_id">
+              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              <h3><a href="#">SIMPLE LOFT</a></h3>
+              <span>Hyderabad, Telangana</span>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <div class="media-02819">
-              <a href="#" class="img-link"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
+            <div class="media-02819 pop_id">
+              <img src="images/Elevation.gif" alt="Image" class="img-fluid">
+              <h3><a href="#">ORIENTAL RESIDENCE</a></h3>
+              <span>Nizampet, Hyderabad</span>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="media-02819">
-              <a href="#" class="img-link small"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
-            </div>
-          </div>
-
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <div class="media-02819">
-              <a href="#" class="img-link small"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="media-02819">
-              <a href="#" class="img-link"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <div class="media-02819">
-              <a href="#" class="img-link"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="media-02819">
-              <a href="#" class="img-link small"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-              <h3><a href="#">Downside Up House</a></h3>
-              <span>Melbourne, Australia</span>
+            <div class="media-02819 pop_id">
+              <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+              <h3><a href="#">SERENE APARTMENT</a></h3>
+              <span>Moosapet, Hyderabad</span>
             </div>
           </div>
 
@@ -284,16 +253,18 @@ body.modal-open {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("pop_id");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+
+$(".pop_id").click(function(){
+   var img = $(this).find("img");
+   $('#modelImage').attr('src', img.attr("src"));
+   modal.style.display = "block";
+});
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
