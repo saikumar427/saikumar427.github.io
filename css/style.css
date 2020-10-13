@@ -475,7 +475,7 @@ h1, h2, h3, h4, h5,
     padding: 0;
     font-size: 1.7rem; }
     .site-navbar .site-logo a {
-      color: #43ab92;
+      color: black;
       text-transform: lowercase; }
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
@@ -488,7 +488,7 @@ h1, h2, h3, h4, h5,
     padding: 0;
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
-      color: #43ab92 !important; }
+      color: black !important; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block; }
