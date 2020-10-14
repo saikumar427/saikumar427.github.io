@@ -1410,7 +1410,7 @@ h1, h2, h3, h4, h5,
   color: #43ab92; }
 
 .testimonial-1 p {
-  font-size: 1.5rem; }
+  font-size: 20px; }
 
 .post-entry-1 {
   position: relative; }
@@ -1651,7 +1651,7 @@ h1, h2, h3, h4, h5,
     .media-02819 .img-link:hover {
       bottom: 20px; }
   .media-02819 h3 {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 0; }
     .media-02819 h3 a {
       color: #000; }
