@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5,
   .site-navbar .site-logo {
     margin: 0;
     padding: 0;
-    font-size: 1.7rem; }
+    font-size: 20px; }
     .site-navbar .site-logo a {
       color: black;
       #text-transform: lowercase; 
