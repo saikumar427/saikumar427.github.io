@@ -476,7 +476,8 @@ h1, h2, h3, h4, h5,
     font-size: 1.7rem; }
     .site-navbar .site-logo a {
       color: black;
-      text-transform: lowercase; }
+      #text-transform: lowercase; 
+	  }
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
         float: left;
@@ -493,7 +494,9 @@ h1, h2, h3, h4, h5,
       text-decoration: none !important;
       display: inline-block; }
     .site-navbar .site-navigation .site-menu > li {
-      display: inline-block; }
+      display: inline-block; 
+	  font-size: 14px;
+	  }
       .site-navbar .site-navigation .site-menu > li > a {
         margin-left: 15px;
         margin-right: 15px;
@@ -513,7 +516,7 @@ h1, h2, h3, h4, h5,
         .site-navbar .site-navigation .site-menu .has-children > a:before {
           position: absolute;
           content: "\e313";
-          font-size: 16px;
+          font-size: 14px;
           top: 50%;
           right: 0;
           -webkit-transform: translateY(-50%);
@@ -1410,7 +1413,7 @@ h1, h2, h3, h4, h5,
   color: #43ab92; }
 
 .testimonial-1 p {
-  font-size: 20px; }
+  font-size: 14px; }
 
 .post-entry-1 {
   position: relative; }
